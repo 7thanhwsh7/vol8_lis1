@@ -1432,10 +1432,10 @@ mark.hl-pink   { background: var(--hl-pink);   border-radius: 2px; padding: 0 1p
       <div class="q-section-label">Questions 11 – 15 — Label the map below. Choose the correct letter, A–H.</div>
 
       <div class="map-panel">
-        <div class="map-image-col" id="map-img-col">
+        <div class="map-image-col" id="map-img-col" style="flex-basis:646px;">
           <div class="map-zoom-bar">
             <button class="map-zoom-btn" onclick="adjustMapZoom(-10)" title="Thu nhỏ">−</button>
-            <span class="map-zoom-label" id="map-zoom-label">100%</span>
+            <span class="map-zoom-label" id="map-zoom-label">190%</span>
             <button class="map-zoom-btn" onclick="adjustMapZoom(10)" title="Phóng to">+</button>
             <button class="map-zoom-expand-btn" onclick="openMapLightbox()" title="Xem toàn màn hình">⛶</button>
           </div>
@@ -1445,51 +1445,31 @@ mark.hl-pink   { background: var(--hl-pink);   border-radius: 2px; padding: 0 1p
           <div class="map-q-row" id="anchor-11">
             <div class="map-q-num">11</div>
             <div class="map-q-text">seating area</div>
-            <select class="q-select" id="ans-11" data-q="11" onchange="handleInput(11,this)">
-              <option value="">--</option>
-              <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
-              <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
-            </select>
+            <input type="text" class="map-letter-input q-input" id="ans-11" data-q="11" maxlength="1" placeholder="A-H" oninput="handleInput(11,this)" />
             <button class="q-flag-btn" data-q="11" onclick="toggleFlag(11)">🚩</button>
           </div>
           <div class="map-q-row" id="anchor-12">
             <div class="map-q-num">12</div>
             <div class="map-q-text">cushions</div>
-            <select class="q-select" id="ans-12" data-q="12" onchange="handleInput(12,this)">
-              <option value="">--</option>
-              <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
-              <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
-            </select>
+            <input type="text" class="map-letter-input q-input" id="ans-12" data-q="12" maxlength="1" placeholder="A-H" oninput="handleInput(12,this)" />
             <button class="q-flag-btn" data-q="12" onclick="toggleFlag(12)">🚩</button>
           </div>
           <div class="map-q-row" id="anchor-13">
             <div class="map-q-num">13</div>
             <div class="map-q-text">computer bench</div>
-            <select class="q-select" id="ans-13" data-q="13" onchange="handleInput(13,this)">
-              <option value="">--</option>
-              <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
-              <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
-            </select>
+            <input type="text" class="map-letter-input q-input" id="ans-13" data-q="13" maxlength="1" placeholder="A-H" oninput="handleInput(13,this)" />
             <button class="q-flag-btn" data-q="13" onclick="toggleFlag(13)">🚩</button>
           </div>
           <div class="map-q-row" id="anchor-14">
             <div class="map-q-num">14</div>
             <div class="map-q-text">café bar</div>
-            <select class="q-select" id="ans-14" data-q="14" onchange="handleInput(14,this)">
-              <option value="">--</option>
-              <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
-              <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
-            </select>
+            <input type="text" class="map-letter-input q-input" id="ans-14" data-q="14" maxlength="1" placeholder="A-H" oninput="handleInput(14,this)" />
             <button class="q-flag-btn" data-q="14" onclick="toggleFlag(14)">🚩</button>
           </div>
           <div class="map-q-row" id="anchor-15">
             <div class="map-q-num">15</div>
             <div class="map-q-text">newspapers</div>
-            <select class="q-select" id="ans-15" data-q="15" onchange="handleInput(15,this)">
-              <option value="">--</option>
-              <option value="A">A</option><option value="B">B</option><option value="C">C</option><option value="D">D</option>
-              <option value="E">E</option><option value="F">F</option><option value="G">G</option><option value="H">H</option>
-            </select>
+            <input type="text" class="map-letter-input q-input" id="ans-15" data-q="15" maxlength="1" placeholder="A-H" oninput="handleInput(15,this)" />
             <button class="q-flag-btn" data-q="15" onclick="toggleFlag(15)">🚩</button>
           </div>
         </div>
@@ -1651,10 +1631,10 @@ mark.hl-pink   { background: var(--hl-pink);   border-radius: 2px; padding: 0 1p
         </div>
       </div>
 
-      <div class="q-section-label">Questions 25 – 30 — What criticism is made of each of the following technical aspect of Ron's presentation? Choose SIX correct answers, A–H. Kéo (hoặc chạm chọn) đáp án vào đúng ô.</div>
+      <div class="q-section-label">Questions 25 – 30 — What criticism is made of each of the following technical aspect of Ron's presentation? Choose SIX correct answers, A–H. Drag (or tap to select) an answer into each box.</div>
 
       <div class="dnd-wrap" id="dnd-group-2530">
-        <div class="dnd-pool-label">Đáp án (kéo thả vào ô bên dưới)</div>
+        <div class="dnd-pool-label">Answers (drag into the boxes below)</div>
         <div class="dnd-pool">
           <div class="dnd-chip" data-letter="a" draggable="true" ondragstart="dndDragStart(event,'a')" ondragend="dndDragEnd(event)" onclick="dndChipClick('a')"><span class="dnd-chip-key">A</span> too informal</div>
           <div class="dnd-chip" data-letter="b" draggable="true" ondragstart="dndDragStart(event,'b')" ondragend="dndDragEnd(event)" onclick="dndChipClick('b')"><span class="dnd-chip-key">B</span> too irregular</div>
@@ -1669,37 +1649,37 @@ mark.hl-pink   { background: var(--hl-pink);   border-radius: 2px; padding: 0 1p
           <div class="dnd-row" id="anchor-25">
             <div class="dnd-row-num">25</div>
             <div class="dnd-row-text">speed of delivery</div>
-            <div class="dnd-zone" id="dnd-zone-25" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,25)" onclick="dndZoneClick(25)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-25" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,25)" onclick="dndZoneClick(25)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="25" onclick="toggleFlag(25)">🚩</button>
           </div>
           <div class="dnd-row" id="anchor-26">
             <div class="dnd-row-num">26</div>
             <div class="dnd-row-text">purpose</div>
-            <div class="dnd-zone" id="dnd-zone-26" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,26)" onclick="dndZoneClick(26)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-26" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,26)" onclick="dndZoneClick(26)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="26" onclick="toggleFlag(26)">🚩</button>
           </div>
           <div class="dnd-row" id="anchor-27">
             <div class="dnd-row-num">27</div>
             <div class="dnd-row-text">transitions</div>
-            <div class="dnd-zone" id="dnd-zone-27" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,27)" onclick="dndZoneClick(27)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-27" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,27)" onclick="dndZoneClick(27)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="27" onclick="toggleFlag(27)">🚩</button>
           </div>
           <div class="dnd-row" id="anchor-28">
             <div class="dnd-row-num">28</div>
             <div class="dnd-row-text">visuals</div>
-            <div class="dnd-zone" id="dnd-zone-28" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,28)" onclick="dndZoneClick(28)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-28" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,28)" onclick="dndZoneClick(28)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="28" onclick="toggleFlag(28)">🚩</button>
           </div>
           <div class="dnd-row" id="anchor-29">
             <div class="dnd-row-num">29</div>
             <div class="dnd-row-text">vocabulary</div>
-            <div class="dnd-zone" id="dnd-zone-29" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,29)" onclick="dndZoneClick(29)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-29" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,29)" onclick="dndZoneClick(29)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="29" onclick="toggleFlag(29)">🚩</button>
           </div>
           <div class="dnd-row" id="anchor-30">
             <div class="dnd-row-num">30</div>
             <div class="dnd-row-text">body language</div>
-            <div class="dnd-zone" id="dnd-zone-30" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,30)" onclick="dndZoneClick(30)"><span class="dnd-zone-placeholder">Thả vào đây</span></div>
+            <div class="dnd-zone" id="dnd-zone-30" ondragover="dndDragOver(event)" ondragleave="dndDragLeave(event)" ondrop="dndDrop(event,30)" onclick="dndZoneClick(30)"><span class="dnd-zone-placeholder">Drop here</span></div>
             <button class="q-flag-btn" data-q="30" onclick="toggleFlag(30)">🚩</button>
           </div>
         </div>
@@ -2008,6 +1988,7 @@ mark.hl-pink   { background: var(--hl-pink);   border-radius: 2px; padding: 0 1p
 const CONFIG = {
   SCRIPT_URL: 'https://script.google.com/macros/s/AKfycbze-ULqfpnB5IcJxAvg2m7IfSqkoUY4JmoHnjvpuGvxodzmLbhHHlcqxfcnha2aahY/exec',
   TEST_NAME:  'vol8_lis1',
+  TEST_LABEL: 'LISTENING TEST 1',   // display label shown in UI (storage keys still use TEST_NAME)
   TOTAL_Q:    40,
   TIMER_SECS: 35 * 60,             // 35 phút (30 nghe + 5 xem lại)
   WARN_SECS:  5 * 60,              // cảnh báo đỏ khi còn 5 phút
@@ -2016,7 +1997,7 @@ const CONFIG = {
   // key = số câu (string), value = đáp án chuẩn (lowercase, trim sẵn)
   // Câu chọn 2 dùng key "19-20", value = array sorted, vd: ["b","d"]
   CORRECT_ANSWERS: {
-    "1":  "30 march",   "2":  "0903775115",   "3":  "northern",   "4":  "train",   "5":  "hotel",
+    "1":  ["30 march", "30th march", "march 30", "march 30th"],   "2":  "0903775115",   "3":  "northern",   "4":  "train",   "5":  "hotel",
     "6":  "farm",   "7":  "pass",   "8":  "booklet",   "9":  "insurance",   "10": "internet cafe",
     "11": "c",   "12": "f",   "13": "d",   "14": "a",   "15": "h",
     "16": "c",   "17": "b",   "18": "c",   "19": "a",   "20": "c",
@@ -2081,7 +2062,7 @@ function handleLogin() {
   try { const f = localStorage.getItem(FLAG_KEY()); if (f) state.flags = JSON.parse(f); } catch(e) {}
 
   // Populate shared UI labels
-  const testLabel = CONFIG.TEST_NAME.replace(/_/g,' ').toUpperCase();
+  const testLabel = CONFIG.TEST_LABEL;
   document.getElementById('sidebar-name').textContent   = name;
   document.getElementById('sidebar-class').textContent  = cls;
   document.getElementById('sidebar-test-name').textContent = testLabel;
@@ -2488,7 +2469,7 @@ function dndUpdateZoneUI(qNum, letter) {
     zone.innerHTML = `<span class="dnd-zone-letter">${letter.toUpperCase()}</span><button class="dnd-zone-clear" onclick="event.stopPropagation(); dndRemove(${qNum})">✕</button>`;
   } else {
     zone.classList.remove('filled');
-    zone.innerHTML = `<span class="dnd-zone-placeholder">Thả vào đây</span>`;
+    zone.innerHTML = `<span class="dnd-zone-placeholder">Drop here</span>`;
   }
 }
 
@@ -2591,7 +2572,7 @@ function dndRestoreAll() {
 /* ─────────────────────────────────────────────────────────────
    MAP ZOOM (Part 2 — resizable map image for different screens)
    ───────────────────────────────────────────────────────────── */
-let mapZoom = 100;
+let mapZoom = 190;
 function adjustMapZoom(delta) {
   mapZoom = Math.min(220, Math.max(60, mapZoom + delta));
   const col = document.getElementById('map-img-col');
@@ -2670,12 +2651,21 @@ function calcScore() {
 
   Object.entries(CA).forEach(([key, correct]) => {
     const student = state.answers[key];
-    if (Array.isArray(correct)) {
-      // Dual: compare sorted arrays
+    const isDualGroup = CONFIG.DUAL_GROUPS.includes(key);
+
+    if (Array.isArray(correct) && isDualGroup) {
+      // Dual-answer question (e.g. "choose TWO"): compare sorted arrays, each item = 1 point
       if (Array.isArray(student)) {
         const a = [...correct].map(x=>x.toLowerCase()).sort().join(',');
         const b = [...student].map(x=>x.toLowerCase()).sort().join(',');
-        if (a === b) score += correct.length; // each item counts as 1 point
+        if (a === b) score += correct.length;
+      }
+    } else if (Array.isArray(correct)) {
+      // Single-answer question with multiple acceptable spellings/variants (e.g. "30 march" / "30th march" / "march 30")
+      if (student) {
+        const val = student.toString().toLowerCase().trim();
+        const variants = correct.map(x => x.toLowerCase().trim());
+        if (variants.includes(val)) score++;
       }
     } else {
       if (student && student.toString().toLowerCase().trim() === correct.toLowerCase().trim()) {
@@ -2745,7 +2735,7 @@ function showResultScreen() {
   document.getElementById('result-score-display').innerHTML = `${state.score}<span>/${CONFIG.TOTAL_Q}</span>`;
   document.getElementById('result-name-display').textContent  = state.name;
   document.getElementById('result-class-display').textContent = state.cls;
-  document.getElementById('result-test-name-display').textContent = CONFIG.TEST_NAME.replace(/_/g,' ').toUpperCase();
+  document.getElementById('result-test-name-display').textContent = CONFIG.TEST_LABEL;
   renderBandTable(state.score);
   showScreen('screen-result');
 }
@@ -2785,7 +2775,7 @@ function renderBandTable(score) {
 function showAnswerSheet() {
   const dateStr = new Date().toLocaleDateString('vi-VN');
   document.getElementById('as-meta').textContent =
-    `${state.name} — ${state.cls} — ${CONFIG.TEST_NAME.replace(/_/g,' ').toUpperCase()} — ${dateStr}`;
+    `${state.name} — ${state.cls} — ${CONFIG.TEST_LABEL} — ${dateStr}`;
   document.getElementById('as-score').textContent = `${state.score} / ${CONFIG.TOTAL_Q}`;
 
   // Count answered
@@ -2824,7 +2814,7 @@ function showAnswerSheet() {
    ───────────────────────────────────────────────────────────── */
 function showReview() {
   // Populate review sidebar
-  const testLabel = CONFIG.TEST_NAME.replace(/_/g,' ').toUpperCase();
+  const testLabel = CONFIG.TEST_LABEL;
   document.getElementById('review-test-name').textContent   = testLabel;
   document.getElementById('review-sidebar-name').textContent  = state.name;
   document.getElementById('review-sidebar-class').textContent = state.cls;
@@ -2914,7 +2904,7 @@ function showReview() {
    INIT
    ───────────────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', () => {
-  const testLabel = CONFIG.TEST_NAME.replace(/_/g,' ').toUpperCase();
+  const testLabel = CONFIG.TEST_LABEL;
   document.querySelectorAll('[id$="-test-name"]').forEach(el => el.textContent = testLabel);
   // Background watermark text on login screen
   const bg = document.getElementById('login-bg-text');
